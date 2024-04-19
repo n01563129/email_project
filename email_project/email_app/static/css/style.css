@@ -1,0 +1,111 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px; 
+    margin-top: 100px; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.header {
+    background: #005a87;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form-wrapper {
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea,
+button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    margin-top: 15px; 
+}
+
+button:hover {
+    background-color: #0079a1;
+}
+
+a {
+    color: #005a87;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        margin-top: 50px; 
+        padding: 10px;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    form {
+        grid-gap: 15px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    textarea,
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
